@@ -501,12 +501,15 @@ html {
                 }
             }
 
-            @media (min-width: 768px) {
+            @media (min-width: 915px) {
                 flex-direction: row;
                 max-width: 1300px;
                 .meta {
                     flex-basis: 40%;
                     height: auto;
+                }
+                .photo{
+                    transform: none;
                 }
                 .description {
                     flex-basis: 60%;
@@ -849,7 +852,7 @@ html {
 }
 
 /* Adicione estas regras CSS para telas menores (por exemplo, largura máxima de 768px) */
-@media (max-width: 768px) {
+@media (max-width: 914px) {
     // Navbar
     .uk-navbar-container {
         position: relative;
@@ -1030,6 +1033,12 @@ html {
 
         // End of Portfolio
 
+        // Proposta
+
+
+
+        // End of Proposta
+
         // Motivos
         .card-title {
             width: calc(50% - 20px) !important;
@@ -1059,10 +1068,50 @@ html {
         // End of Motivos
 
         // Garantias
+        .garantia{
+            min-height:auto !important;
+            .card-img {
 
+                img{
+                    width: 100px;
+                }
+                .img {
+                    width: 100%;
+                    height: 50%;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-size: cover;
+                    background-position: center;
+                    transition: all 0.5s;
+                    position: relative;
+                }
         
+                h2 {
+                    font-family: $Bebas;
+                    font-size: 20px;
+                    text-align: center;
+                }
+        
+                &:hover {
+                    background-color: var(--whiter);
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    .img {
+                        opacity: 1; /* Remove a opacidade quando em hover */
+                    }
+                }
+            }
+        }
 
         // End of Garantias
+
+        // Titulo final
+        .title-end {
+            font-size: 20px;
+            text-align: center;
+        }
+        
 
     }
 }

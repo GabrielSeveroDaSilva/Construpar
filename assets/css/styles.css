@@ -420,7 +420,7 @@ html {
 .container-main .proposta .blog-card .btn-prop:active {
   top: 2px;
 }
-@media (min-width: 768px) {
+@media (min-width: 915px) {
   .container-main .proposta .blog-card {
     flex-direction: row;
     max-width: 1300px;
@@ -428,6 +428,9 @@ html {
   .container-main .proposta .blog-card .meta {
     flex-basis: 40%;
     height: auto;
+  }
+  .container-main .proposta .blog-card .photo {
+    transform: none;
   }
   .container-main .proposta .blog-card .description {
     flex-basis: 60%;
@@ -725,7 +728,7 @@ html {
 }
 
 /* Adicione estas regras CSS para telas menores (por exemplo, largura máxima de 768px) */
-@media (max-width: 768px) {
+@media (max-width: 914px) {
   .uk-navbar-container {
     position: relative;
   }
@@ -884,5 +887,39 @@ html {
   .container-main .card .show-content {
     opacity: 1;
     visibility: visible;
+  }
+  .container-main .garantia {
+    min-height: auto !important;
+  }
+  .container-main .garantia .card-img img {
+    width: 100px;
+  }
+  .container-main .garantia .card-img .img {
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .container-main .garantia .card-img h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  .container-main .garantia .card-img:hover {
+    background-color: var(--whiter);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .container-main .garantia .card-img:hover .img {
+    opacity: 1; /* Remove a opacidade quando em hover */
+  }
+  .container-main .title-end {
+    font-size: 20px;
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
