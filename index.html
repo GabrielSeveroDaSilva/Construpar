@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+
+  <!-- Bebas -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <title>Construpar Empreendimentos</title>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+        <img class="logo" src="./assets/images/Logo.png" alt="">
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a href="#">Construpar</a></li>
+          <li><a href="#">Ficha do Evento</a></li>
+          <li><a href="#">Infra-Estrutura</a></li>
+          <li>
+            <a href="#">Mais <i uk-icon="triangle-down"></i></a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li><a href="#">Boas Razões</a></li>
+                <li><a href="#">Investir</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+          </li>
+          <div class="btn-cont">
+            <li class="uk-button"><i uk-icon="whatsapp"></i> <a id="whats" href="#">Fale Conosco</a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of NavBar-->
+
+  </header>
+  <!-- End of Header -->
+
+  <!-- Container -->
+  <main class="container-main">
+    <!-- Parallax -->
+    <div class="parallax-container">
+      <video autoplay muted loop id="parallax-video">
+        <source src="./Video.mp4" type="video/mp4">
+      </video>
+      <div class="right parallax-content">
+        <aside>
+
+          <h1><i uk-icon="icon:location; ratio: 2.5"></i>Nova Mutum - Mt</h1>
+          <p> Uma Cidade Modelo !</p>
+        </aside>
+
+      </div>
+    </div>
+    <!-- End Of Parallax  -->
+
+    <!-- Portfolio -->
+    <div class="row g-5 portfolio-container">
+
+      <h1 class="title">Infra-estrutura do Loteamento Cidade Bela</h1>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+        <div class="position-relative portfolio-box">
+          <img class="img-fluid w-100" src="/assets/images/Asfalto.jpeg" alt="">
+          <a class="portfolio-title shadow-sm" href="">
+            <p class="h4 text-uppercase">Asfalto</p>
+          </a>
+          <a class="portfolio-btn" href="#" data-lightbox="portfolio">
+            <img src="/assets/images/ASFALTO.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+        <div class="position-relative portfolio-box">
+          <img class="img-fluid w-100" src="/assets/images/Iluminação.jpeg" alt="">
+          <a class="portfolio-title shadow-sm" href="">
+            <p class="h4 text-uppercase">Iluminação em LED</p>
+          </a>
+          <a class="portfolio-btn" href="#" data-lightbox="portfolio">
+            <img src="/assets/images/POST LED.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+        <div class="position-relative portfolio-box">
+          <img class="img-fluid w-100" src="/assets/images/PRaça.jpeg" alt="">
+          <a class="portfolio-title shadow-sm" href="">
+            <p class="h4 text-uppercase">Praça Urbanizada</p>
+          </a>
+          <a class="portfolio-btn" href="#" data-lightbox="portfolio">
+            <img src="/assets/images/PRAÇA_URBANIZADA.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+        <div class="position-relative portfolio-box">
+          <img class="img-fluid w-100" src="/assets/images/sarjeta.jpeg" alt="">
+          <a class="portfolio-title shadow-sm" href="">
+            <p class="h4 text-uppercase">Sarjeta</p>
+          </a>
+          <a class="portfolio-btn" href="#" data-lightbox="portfolio">
+            <img src="/assets/images/MEIO FIO (1).png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+        <div class="position-relative portfolio-box">
+          <img class="img-fluid w-100" src="/assets/images/meio fio.jpeg" alt="">
+          <a class="portfolio-title shadow-sm" href="">
+            <p class="h4 text-uppercase">Meio fio</p>
+          </a>
+          <a class="portfolio-btn" href="#" data-lightbox="portfolio">
+            <img src="/assets/images/MEIO FIO.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+        <div class="position-relative portfolio-box">
+          <img class="img-fluid w-100" src="/assets/images/agua.jpeg" alt="">
+          <a class="portfolio-title shadow-sm" href="">
+            <p class="h4 text-uppercase">Água potável</p>
+          </a>
+          <a class="portfolio-btn" href="#" data-lightbox="portfolio">
+            <img src="/assets/images/ENCANAMENTO.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão de Compra -->
+    <div class="button-container">
+      <button class="custom-btn btn-15">Compre o seu terreno hoje!</button><i
+        uk-icon="icon:triangle-right; ratio: 1.22;"></i>
+    </div>
+    <!-- End of Portfolio -->
+
+    <!-- Proposta -->
+
+    <div class="proposta">
+      <div class="blog-card alt">
+        <div class="meta">
+          <img class="photo" src="/assets/images/empreender.jpeg" alt="">
+        </div>
+        <div class="description">
+          <h1>Nova Mutum: O Destino do Crescimento em Mato Grosso</h1>
+          <h2>Invista Agora no Loteamento Cidade Bela e Faça Parte de um Futuro Brilhante!</h2>
+          <p>Esta cidade está no centro das atenções, sendo aclamada como o epicentro do crescimento e desenvolvimento
+            na região. As manchetes locais não param de destacar suas perspectivas promissoras.</p>
+          <p>Agora, com o lançamento empolgante do Loteamento Cidade Bela, as oportunidades se multiplicam! A Construpar
+            Construtora está comprometida em oferecer as condições mais vantajosas e preços acessíveis para que você
+            cresça em sintonia com essa cidade em ascensão.</p>
+          <p>Ainda hesita? Não deixe sua oportunidade de investimento passar. Seu imóvel está destinado a valorizar-se,
+            e o momento ideal é agora! Entre em contato com nossa equipe hoje mesmo para esclarecer todas as suas
+            dúvidas e descubra nossos planos de pagamento flexíveis, com prazos de até 12 anos. Não espere, seja parte
+            do futuro de Nova Mutum!</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="meta">
+          <img class="photo" src="/assets/images/quintal.jpeg" alt="">
+        </div>
+        <div class="description">
+          <h1>Seu Lote no Paraíso - Nova Mutum</h1>
+          <p>Como é maravilhoso proporcionar tranquilidade à sua família! Muitos já construíram e estão vivendo em
+            nossos loteamentos, desfrutando de uma vida com qualidade na região que mais cresce em Nova Mutum.</p>
+          <a href="link-para-solicitacao-de-proposta" style="text-decoration: none;">
+            <div class="btn-prop">
+              <button class="custom-btn btn-15">Solicite uma proposta</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Proposta -->
+
+    <!-- Motivos -->
+
+    <div class="cards">
+
+      <div class="card-title">
+        <h1>Investir</h1>
+        <h1>Trabalhar</h1>
+        <h1>Viver</h1>
+      </div>
+      
+      <div class="card">
+        <div class="img">
+          <img src="/assets/images/Asfalto.jpeg" alt="">
+        </div>
+        <div class="content">
+          <span class="title">Crescimento econômico:</span>
+          <p class="desc">Nova Mutum é um polo agroindustrial em crescimento.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="/assets/images/Asfalto.jpeg" alt="">
+        </div>
+        <div class="content">
+          <span class="title">Logística estratégica:</span>
+          <p class="desc">Localização próxima a importantes rodovias.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="/assets/images/Asfalto.jpeg" alt="">
+        </div>
+        <div class="content">
+          <span class="title">Crescimento populacional:</span>
+          <p class="desc">Atração de pessoas em busca de oportunidades.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="/assets/images/Asfalto.jpeg" alt="">
+        </div>
+        <div class="content">
+          <span class="title">Infraestrutura em expansão:</span>
+          <p class="desc">Investimentos em estradas e serviços públicos.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="/assets/images/Asfalto.jpeg" alt="">
+        </div>
+        <div class="content">
+          <span class="title">Diversificação de investimentos:</span>
+          <p class="desc">Terrenos oferecem potencial de valorização.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Motivos -->
+
+    <div class="cards">
+      <div class="card">
+        <li class="check"><i class="fa fa-clipboard-list-check"></i>
+        </i></li>
+      </div>
+    </div>
+
+  </main>
+  <!-- End of Container -->
+
+
+
+
+  <!-- Footer -->
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Endereço</h6>
+          <p class="text-justify">Rua das Primaveras, nº 140 W</p>
+          <p class="text-justify">Nova Mutum - MT 78450-000</p>
+        </div>
+
+        <div class="col-xs-6 col-md-6">
+          <h6>Contato</h6>
+          <ul class=" footer-links">
+            <li><a href="">contato@construparconstrutora.com.br</a></li>
+            <li><a href="">(65) 3308-4281</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">&copy; Todos os direitos reservados. 2023
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End of Footer -->
+
+
+  <!-- Scripts -->
+
+  <script>
+
+    document.addEventListener('scroll', function () {
+      let scrolled = window.scrollY;
+      let parallax = document.querySelector('.parallax-container');
+      parallax.style.transform = `translateY(-${scrolled * 0.3}px)`;
+    });
+
+  </script>
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit-icons.min.js"></script>
+
+
+  <!-- End of Scripts -->
+
+</body>
+
+</html>
