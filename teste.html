@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+
+    <!-- Bebas -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Construpar Empreendimentos</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <img class="logo" src="./assets/images/Logo.png" alt="">
+            </div>
+            <!-- Movendo o menu para a direita em telas maiores -->
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <!-- Seus itens de menu aqui -->
+                    <li><a href="#home">Construpar</a></li>
+                    <li><a href="#">Ficha do Evento</a></li>
+                    <li><a href="#infra">Infra-Estrutura</a></li>
+                    <li>
+                        <a href="#">Mais <i uk-icon="triangle-down"></i></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#motivos">Boas Razões</a></li>
+                                <li><a href="#investir">Investir</a></li>
+                                <li><a href="#contato">Contato</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="btn-cont">
+                        <li class="uk-button"><i uk-icon="whatsapp"></i> <a id="whats" href="#">Fale Conosco</a></li>
+                    </div>
+                    <ul>
+            </div>
+            <!-- Menu responsivo para telas menores -->
+            <div class="responsive-menu uk-hidden@m">
+                <a href="#" class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <div id="offcanvas-nav" uk-offcanvas="flip: true" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <ul class="uk-nav uk-nav-default">
+                            <!-- Seus itens de menu aqui -->
+                            <li><a href="#">Construpar</a></li>
+                            <li><a href="#">Ficha do Evento</a></li>
+                            <li><a href="#">Infra-Estrutura</a></li>
+                            <li>
+                                <a href="#">Mais <i uk-icon="triangle-down"></i></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Boas Razões</a></li>
+                                        <li><a href="#">Investir</a></li>
+                                        <li><a href="#">Contato</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <div class="btn-cont">
+                                <li class="uk-button"><i uk-icon="whatsapp"></i> <a id="whats" href="#">Fale Conosco</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of NavBar -->
+    </header>
+    <!-- End of Header -->
+
+    <!-- Inclua os scripts do UIkit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.3/js/uikit-icons.min.js"></script>
+
+</body>
+
+</html>

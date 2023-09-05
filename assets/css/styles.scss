@@ -125,6 +125,9 @@ html {
     }
 }
 
+@media (max-width: 768px) {
+}
+
 .logo {
     width: 80px;
 }
@@ -191,6 +194,9 @@ html {
 
 .container-main {
     width: 100vw;
+
+    // Parallax
+
     .parallax-container {
         position: relative;
         width: 100%;
@@ -243,6 +249,8 @@ html {
             }
         }
     }
+
+    // Portifolio
 
     .portfolio-container {
         margin: 20px;
@@ -564,8 +572,45 @@ html {
         }
     }
 
+    .card-img {
+        cursor: pointer;
+        width: calc(33.33% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s;
+        border: none;
+
+        .img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.5s;
+            position: relative;
+        }
+
+        h2 {
+            font-family: $Bebas;
+            font-size: 30px;
+        }
+
+        &:hover {
+            background-color: var(--whiter);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .img {
+                opacity: 1; /* Remove a opacidade quando em hover */
+            }
+        }
+    }
+
     .card {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         cursor: pointer;
         width: calc(33.33% - 20px);
         margin: 10px;
@@ -581,13 +626,14 @@ html {
 
         &:hover {
             background-image: linear-gradient(#003db6, #001847);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
             .img {
                 opacity: 1; /* Remove a opacidade quando em hover */
             }
         }
 
-        .check{
+        .check {
             font-size: 30px;
             color: var(--blue);
         }
@@ -632,13 +678,14 @@ html {
             }
 
             .title {
-                font-size: 20px;
-                font-weight: 600;
+                font-size: 25px;
+                font-family: $Bebas;
             }
 
             .desc {
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 100;
+                text-align: center;
                 opacity: 0.8;
                 margin-top: 8px;
             }
@@ -647,6 +694,17 @@ html {
         &:hover .content {
             opacity: 1;
         }
+    }
+
+    .title-end {
+        font-family: $Bebas !important;
+        display: flex; // Usa flexbox para alinhar os elementos internos
+        flex-direction: column; // Define a direção do flexbox como coluna
+        justify-content: center; // Alinha verticalmente os elementos no centro
+        align-items: center;
+        padding: 0 20px;
+        margin-bottom: 30px;
+        z-index: 1; // Define a ordem de empilhamento
     }
 }
 
@@ -786,5 +844,195 @@ html {
                 }
             }
         }
+    }
+}
+
+/* Adicione estas regras CSS para telas menores (por exemplo, largura máxima de 768px) */
+@media (max-width: 768px) {
+    // Navbar
+    .uk-navbar-container {
+        position: relative;
+
+        .uk-navbar-nav {
+            display: none; /* Oculta o menu de navegação padrão em telas menores */
+        }
+
+        .uk-offcanvas-bar {
+            background-color: var(--whiter);
+            box-shadow: 3.8px 2.5px 7.8px rgba(0, 0, 0, 0.52), 30px 20px 62px rgba(0, 0, 0, 0.345);
+            transition: all 0.5s linear;
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+            height: 400px;
+            width: 300px;
+            padding-bottom: 20px;
+
+            li {
+                a {
+                    padding: 0 10px;
+                    font-family: $Bebas;
+
+                    color: var(--blue) !important;
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.4);
+                    }
+                }
+                i {
+                    color: var(--blue) !important;
+                }
+            }
+
+            .uk-navbar-dropdown {
+                background-color: var(--whiter) !important;
+                padding: 10px 0;
+                box-shadow: 3.8px 2.5px 7.8px rgba(0, 0, 0, 0.52), 30px 20px 62px rgba(0, 0, 0, 0.345);
+
+                a {
+                    font-family: $Bebas;
+                    font-size: 30px;
+                    padding: 5px 15px;
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+
+            .btn-cont {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+
+                .uk-button {
+                    border-radius: 50%;
+                    padding: 10px 5px;
+
+                    i {
+                        color: var(--grey) !important;
+                        font-size: 30px;
+
+                        &:hover,
+                        &:active {
+                            color: var(--btn-whats) !important;
+                        }
+
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .responsive-menu {
+            display: block; /* Mostra o menu responsivo em telas menores */
+            text-align: right;
+            padding: 10px;
+        }
+
+        .responsive-menu a {
+            font-family: $Bebas;
+            font-size: 30px;
+            color: var(--blue) !important;
+            display: block;
+            padding: 10px;
+        }
+    }
+    // End of Navbar
+
+    .container-main {
+        // Parallax
+        .parallax-container {
+            height: 300px;
+
+            #parallax-video {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .right {
+                position: absolute;
+                width: 100%;
+
+                aside {
+                    top: 40px;
+                    width: 60%;
+                    margin: 0;
+                    text-align: right;
+                    h1 {
+                        font-size: 25px;
+                        i {
+                            display: none;
+                        }
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+        // End of Parallax
+
+        // Portfolio
+
+        .portfolio-container {
+            margin: 20px;
+
+            .title {
+                font-family: $Bebas !important;
+                background-color: var(--whiter);
+                position: relative; // Define a posição como absoluta
+                font-size: 30px;
+                text-align: center;
+                padding: 0 30px; // Define o preenchimento interno nas laterais
+                top: -60px; // Move o título para baixo em relação ao seu contêiner
+                z-index: 1; // Define a ordem de empilhamento
+                box-shadow: 3.8px 2.5px 7.8px rgba(0, 0, 0, 0.52), 30px 20px 62px rgba(0, 0, 0, 0.345);
+            }
+
+            // Define a classe .portfolio-item com margem inferior de 60px
+            .portfolio-item {
+                margin-bottom: 60px;
+            }
+
+            // Define a classe .portfolio-title para os títulos dos itens do portfólio
+            .portfolio-title {
+                position: absolute; // Define a posição como absoluta
+                display: flex; // Usa flexbox para alinhar os elementos internos
+                height: 120px; // Define a altura do título
+                padding: 0 10px; // Define o preenchimento interno nas laterais
+                right: 30px; // Define a posição direita a 30px
+                left: 30px; // Define a posição esquerda a 30px
+                bottom: -30px; // Move o título para baixo em relação ao seu contêiner
+                background: var(--whiter); // Define a cor de fundo como branco
+                z-index: 3; // Define a ordem de empilhamento
+                box-shadow: 3.8px 2.5px 7.8px rgba(0, 0, 0, 0.52), 30px 20px 62px rgba(0, 0, 0, 0.345);
+            }
+
+            // Define a classe .portfolio-btn para os botões do portfólio
+            .portfolio-btn {
+                position: absolute; // Define a posição como absoluta
+                display: inline-block; // Define como um elemento de bloco em linha
+                top: 50%; // Move o elemento para o meio verticalmente
+                left: 50%; // Move o elemento para o meio horizontalmente
+                margin-top: -60px; // Move o elemento para cima para centralizá-lo verticalmente
+                margin-left: -60px; // Move o elemento para a esquerda para centralizá-lo horizontalmente
+                font-size: 120px; // Define o tamanho da fonte
+                line-height: 0; // Remove o espaço entre as linhas de texto
+                transition: 0.1s; // Adiciona uma transição suave de 0.1 segundos
+                transition-delay: 0.3s; // Define um atraso para a transição
+                z-index: 2; // Define a ordem de empilhamento
+                opacity: 0; // Define a opacidade como 1
+            }
+
+            .img-fluid {
+                height: 250px !important;
+            }
+        }
+
+        // End of Portfolio
     }
 }
