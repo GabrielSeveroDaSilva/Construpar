@@ -466,7 +466,7 @@ html {
                     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
                         4px 4px 5px 0px rgba(0, 0, 0, 0.1);
                     outline: none;
-                    transform: translateY(100px); // Adicionado deslocamento vertical de -100px
+                    // transform: translateY(100px); // Adicionado deslocamento vertical de -100px
                 }
 
                 /* Restante do código .btn-15 permanece inalterado */
@@ -486,7 +486,6 @@ html {
                         background-color: var(--blue);
                         transition: all 0.3s ease;
                     }
-
                     &:hover {
                         color: var(--whiter);
 
@@ -495,14 +494,14 @@ html {
                             width: 100%;
                         }
                     }
+                }
 
-                    &:active {
-                        top: 2px;
-                    }
+                &:active {
+                    top: 2px;
                 }
             }
 
-            @media (min-width: 640px) {
+            @media (min-width: 768px) {
                 flex-direction: row;
                 max-width: 1300px;
                 .meta {
@@ -536,6 +535,8 @@ html {
                         padding-left: 25px;
                     }
                 }
+
+                
             }
         }
     }
@@ -998,6 +999,11 @@ html {
                 margin-bottom: 60px;
             }
 
+            .portfolio-box::after,
+            .portfolio-box::before {
+                display: none;
+            }
+
             // Define a classe .portfolio-title para os títulos dos itens do portfólio
             .portfolio-title {
                 position: absolute; // Define a posição como absoluta
@@ -1014,18 +1020,7 @@ html {
 
             // Define a classe .portfolio-btn para os botões do portfólio
             .portfolio-btn {
-                position: absolute; // Define a posição como absoluta
-                display: inline-block; // Define como um elemento de bloco em linha
-                top: 50%; // Move o elemento para o meio verticalmente
-                left: 50%; // Move o elemento para o meio horizontalmente
-                margin-top: -60px; // Move o elemento para cima para centralizá-lo verticalmente
-                margin-left: -60px; // Move o elemento para a esquerda para centralizá-lo horizontalmente
-                font-size: 120px; // Define o tamanho da fonte
-                line-height: 0; // Remove o espaço entre as linhas de texto
-                transition: 0.1s; // Adiciona uma transição suave de 0.1 segundos
-                transition-delay: 0.3s; // Define um atraso para a transição
-                z-index: 2; // Define a ordem de empilhamento
-                opacity: 0; // Define a opacidade como 1
+                display: none;
             }
 
             .img-fluid {
@@ -1034,5 +1029,42 @@ html {
         }
 
         // End of Portfolio
+
+        // Motivos
+        .card-title {
+            width: calc(50% - 20px) !important;
+        }
+        .card {
+            width: calc(50% - 20px) !important;
+            height: 200px;
+
+            /* Estilos do conteúdo com opacidade 0 */
+            .content {
+                opacity: 1;
+                text-align: center;
+
+
+                .desc{
+                    display: none;
+                }
+            }
+
+            /* Estilos para mostrar o conteúdo quando rolado para baixo */
+            .show-content {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        
+        // End of Motivos
+
+        // Garantias
+
+        
+
+        // End of Garantias
+
     }
 }
+
+
