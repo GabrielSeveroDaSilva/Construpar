@@ -82,7 +82,7 @@ html {
                 }
             }
             i {
-                color: var(--blue) !important;
+                color: var(--whiter);
             }
         }
 
@@ -125,11 +125,9 @@ html {
     }
 }
 
-@media (max-width: 768px) {
-}
-
 .logo {
     width: 80px;
+    margin-left: 70px;
 }
 
 .button-container {
@@ -508,7 +506,7 @@ html {
                     flex-basis: 40%;
                     height: auto;
                 }
-                .photo{
+                .photo {
                     transform: none;
                 }
                 .description {
@@ -538,8 +536,6 @@ html {
                         padding-left: 25px;
                     }
                 }
-
-                
             }
         }
     }
@@ -853,6 +849,12 @@ html {
 
 /* Adicione estas regras CSS para telas menores (por exemplo, largura máxima de 768px) */
 @media (max-width: 914px) {
+
+    // logo
+    .logo {
+        margin-left: 20px;
+    }
+
     // Navbar
     .uk-navbar-container {
         position: relative;
@@ -1035,8 +1037,6 @@ html {
 
         // Proposta
 
-
-
         // End of Proposta
 
         // Motivos
@@ -1052,8 +1052,7 @@ html {
                 opacity: 1;
                 text-align: center;
 
-
-                .desc{
+                .desc {
                     display: none;
                 }
             }
@@ -1064,15 +1063,14 @@ html {
                 visibility: visible;
             }
         }
-        
+
         // End of Motivos
 
         // Garantias
-        .garantia{
-            min-height:auto !important;
+        .garantia {
+            min-height: auto !important;
             .card-img {
-
-                img{
+                img {
                     width: 100px;
                 }
                 .img {
@@ -1087,13 +1085,13 @@ html {
                     transition: all 0.5s;
                     position: relative;
                 }
-        
+
                 h2 {
                     font-family: $Bebas;
                     font-size: 20px;
                     text-align: center;
                 }
-        
+
                 &:hover {
                     background-color: var(--whiter);
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -1111,9 +1109,5 @@ html {
             font-size: 20px;
             text-align: center;
         }
-        
-
     }
 }
-
-
