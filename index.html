@@ -30,6 +30,15 @@
 </head>
 
 <body>
+  
+  <!-- Loading -->
+  <div id="preloading"class="loading">
+    <div class="load">
+      <hr/><hr/><hr/><hr/>
+    </div>
+  </div>
+  <!--End of Loading -->
+
   <!-- Header -->
   <header>
     <!-- Navbar -->
@@ -45,7 +54,7 @@
           <li><a href="#">Ficha do Evento</a></li>
           <li><a href="#infra">Infra-Estrutura</a></li>
           <li>
-            <a href="#">Mais <i uk-icon="triangle-down"></i></a>
+            <a href="#">Mais <i class="seta" uk-icon="triangle-down"></i></a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
                 <li><a href="#motivos">Boas Razões</a></li>
@@ -55,7 +64,7 @@
             </div>
           </li>
           <div class="btn-cont">
-                    <li class="uk-button"><i uk-icon="whatsapp"></i> <a id="whats" " href="#">Fale Conosco</a></li>
+                    <li class="uk-button"><i uk-icon="whatsapp"></i> <a id="whats" " href="https://api.whatsapp.com/send?phone=5565984020889&text=Tenho%20interesse%20em%20um%20terreno%20da%20Construpar.%20Como%20fa%C3%A7o%20para%20saber%20os%20valores%20e%20condi%C3%A7%C3%B5es%20de%20pagamento%3F">Fale Conosco</a></li>
           </div>
           <ul>
       </div>
@@ -188,10 +197,12 @@
 
 
     <!-- Botão de Compra -->
+    <a href="https://api.whatsapp.com/send?phone=5565984020889&text=Tenho%20interesse%20em%20um%20terreno%20da%20Construpar.%20Como%20fa%C3%A7o%20para%20saber%20os%20valores%20e%20condi%C3%A7%C3%B5es%20de%20pagamento%3F">
     <div class="button-container">
       <button class="custom-btn btn-15">Compre o seu terreno hoje!</button><i
         uk-icon="icon:triangle-right; ratio: 1.22;"></i>
     </div>
+    </a>
     <!-- End of Portfolio -->
 
     <!-- Proposta -->
@@ -389,6 +400,15 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit-icons.min.js"></script>
 
+  <script>
+
+    var loader = document.getElementById("preloading");
+
+    window.addEventListener("load", function(){
+      loader.style.display = "none";
+    })
+
+  </script>
 
   <!-- End of Scripts -->
 
