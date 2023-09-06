@@ -43,6 +43,10 @@ $Arial: "Arial", sans-serif;
     }
 }
 
+*{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $Arial;
     margin: 0;
@@ -50,10 +54,13 @@ body {
     overflow-x: hidden;
     width: 100vw;
     background-color: var(--bg-grey) !important;
+    transition: all 1s ease;
+
 }
 
 html {
     box-sizing: border-box;
+
 }
 
 .py-6 {
@@ -932,7 +939,7 @@ html {
 
     // Navbar
     .uk-navbar-container {
-        position: relative;
+        position: fixed;
 
         .uk-navbar-nav {
             display: none; /* Oculta o menu de navegação padrão em telas menores */
